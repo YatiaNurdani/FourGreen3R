@@ -51,14 +51,13 @@ class RoundedButton2 extends StatelessWidget {
   final String text;
   final Function press;
   final IconData icon;
-  final Color color, textColor;
+  final Color textColor;
 
   const RoundedButton2({
     Key key,
     this.text,
     this.press,
     this.icon = Icons.double_arrow_sharp,
-    this.color = Colors.green,
     this.textColor = Colors.white,
   }) : super(key: key);
 
@@ -75,7 +74,7 @@ class RoundedButton2 extends StatelessWidget {
             vertical: 20,
             horizontal: 40,
           ),
-          color: color,
+          color: Color(0xFF11b18b),
           onPressed: press,
           child: Column(
             children: <Widget>[
